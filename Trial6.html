@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      span {
+        display: inline-block;
+        background-color: black;
+        height: 100px;
+        width: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      #redleft{
+        background-color: blueviolet;
+      }
+      .leftspan {        background-color: yellow;
+
+        margin-left: 50px;
+        margin-right: 25px;
+      }
+      .rightspan {
+        margin-left: 25px;
+        margin-right: 50px;
+      }
+      body {
+        margin: 0;
+      }
+      div {
+        display: inline-block;
+        height: 200px;
+        width: 350px;
+      }
+      #red {
+        background-color: red;
+      
+      }
+      #blue {
+        background-color: blue;
+      }
+      body{
+        font-size: 0px;  ##used to remove space between red and blue div##
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div id="black"></div>
+    <div id="red"></div>
+    <div id="gold"></div> -->
+    <div id="red">
+      <span id="redleft" class="leftspan" style="background-color: aquamarine;"> </span><span class="rightspan"> </span>
+    </div>
+    <div id="blue">
+      <span class="leftspan"> </span><span class="rightspan"> </span>
+    </div>
+  </body>
+</html>
