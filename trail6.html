@@ -8,6 +8,8 @@
     <style>
         body {
             margin:0;
+            font-size:0;
+            /* front-size set at 0 to remove div inline space */
         }
         .big {
             width: 350px;
@@ -29,28 +31,21 @@
             display: inline-block;
             margin-top:50px;
             margin-bottom: 50px;
-        }
-        .l1 {
-            margin-left:50px;
-            margin-right:25px;
-        }
-        .l2{
-            margin-left: 25px;
-            margin-right: 25px;
-        }
-        .l3{
-            margin-left: 25px;
-            margin-right: 25px;
-        }
-        .l4{
-            margin-left: 25px;
-            margin-right: 50px;
+            margin-left: 50px;
         }
         
 
     </style>
 </head>
 <body>
-    <span class="big red"><span class="small l1"></span><span class="small l2"></span></span><span class="big blue"><span class="small l3"></span><span class="small l4"></span></span>
+    <div class="big red">
+        <span class="small"></span>
+        <span class="small"></span>
+    </div>
+    <div class="big blue">
+        <span class="small"></span>
+        <span class="small"></span>
+    </div>
+    <!-- <span class="big blue"><span class="small"></span><span class="small"></span></span> -->
 </body>
 </html>
