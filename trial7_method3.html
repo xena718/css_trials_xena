@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+        }
+        h1 {
+            font-family: Arial;
+        }
+        .bigbox {
+            width:600px;
+            height:130px;
+            background-color: #555555;
+            margin-top:10px;
+            margin-bottom:10px;
+            margin-left:10px;
+            /* border: 0.5em solid darkgrey; */
+        }
+        .bigbox .SameSizedDiv {
+            /* above line:first bigbox class then smaller class */
+            height:90%;
+            width:32%
+         }
+        .BoxinDiv {
+            display: inline-block;
+            background-color:lightgray;
+            margin-left:6px;
+            margin-top:6px;
+        }
+
+        .bigbox .Tall {
+            height:90%;
+            width:23.7%;
+            vertical-align:top;
+        }
+        .bigbox .Short {
+            height:55%;
+            width:23.7%;
+            vertical-align:top;
+        }
+        .inDownDiv{
+            margin-left:6px;
+            margin-top:6px;
+            background-color:lightgray;
+            display: inline-block;
+            /* vertical-align:bottom; */
+        }
+        .short35 {
+            height:35px;
+            width: 291px;
+            vertical-align:bottom;
+        }
+        .normal118 {
+            height:118px;
+            width: 291px;
+            vertical-align:bottom;
+        }
+
+    </style>
+</head>
+<body>
+<h1>AAAAHHHHH</h1>
+<div class="bigbox">
+    <div class ="SameSizedDiv BoxinDiv"></div><!--
+    --><div class ="SameSizedDiv BoxinDiv"></div><!--
+    --><div class ="SameSizedDiv BoxinDiv"></div>
+    <!-- #use comment to remove inline block space -->
+</div>
+<div class="bigbox">
+    <div class ="Tall BoxinDiv"></div><!--
+    --><div class ="Short BoxinDiv"></div><!--
+    --><div class ="Tall BoxinDiv"></div><!--
+    --><div class ="Short BoxinDiv"></div>
+</div>
+<div class="bigbox">
+    <div class ="short35 BoxinDiv"></div><!--
+    --><div class ="normal118 BoxinDiv"></div>
+</div>
+
+</body>
+</html>

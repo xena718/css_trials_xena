@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+        }
+        .container {
+            height:200px;
+            width:900px;
+            background-color:lightgray;
+            margin:0 auto;
+            /* margin: 0 auto, the top/bottom margin is 0, and the left/right margin is auto, Where auto means that the left and right margin are automatically set by the browser based on the container, to make element centered */
+            padding:15px 10px;
+        }
+        .subDiv {
+            width: 180px;
+            height: 180px;
+            display: inline-block;
+            border: 10px double #555;
+        }
+        .circle {
+            border-radius: 50%;
+            border-style: dashed;
+            margin:0 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="subDiv square"></div><!--
+        --><div class="subDiv circle"></div><!--
+        --><div class="subDiv square"></div>
+    </div>
+    
+</body>
+</html>
